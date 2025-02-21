@@ -1,0 +1,8 @@
+services:
+  web:
+    image: httpd:2.4
+    ports:
+      - 80:80
+    volumes:
+      - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./conf/extra:/usr/local/apache2/conf/extra
